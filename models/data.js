@@ -5,7 +5,7 @@ var service_username = 'username';
 var service_password = 'svc.password';
 var service_host = 'svc.host';
 var service_port = 'svc.port';
-var db_name = 'dbname';
+var db_name = 'webdocs';
 
 console.log('Parsing VCAP_SERVICES');
 var services = JSON.parse(process.env.VCAP_SERVICES);

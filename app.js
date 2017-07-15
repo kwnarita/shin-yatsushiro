@@ -19,8 +19,8 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/api', index);
 
-// catch all and forward to angular frontend
-app.get('*', function(req, res, next) {
+// catch all for '/app***' and forward to angular frontend
+app.get('/app*', function(req, res, next) {
 	  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
