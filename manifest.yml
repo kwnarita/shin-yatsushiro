@@ -1,4 +1,6 @@
 applications:
-- name: node-hello-world
+- name: shin-yatsushiro
   memory: 128M
   buildpack: sdk-for-nodejs
+  services: 
+  - Cloudant-Yatsushiro
